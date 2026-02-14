@@ -1,0 +1,1 @@
+Serves as the website in Chrome Web Store [listing](https://chromewebstore.google.com/detail/geolocation-api-blocker/cbpmbkimnhdlaibdcngplgmchiibjeni) for [Geolocation API Blocker](https://github.com/vladimirRadjenovic/geolocation-api-blocker).
