@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+        url('/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --icon-blue: #00a2e8;
+    --icon-red: #ed1c24;
+}
+
+*,
+body {
+    font-family: 'robotoregular', Helvetica, sans-serif;
+    line-height: 1.28;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 42rem;
+    padding: 0 1rem;
+}
+
+.sub-heading {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.main-heading {
+    font-size: 1.75rem;
+}
+
+.section {
+    text-align: justify;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    text-align: left;
+}
+
+a.link:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+
+a.link:hover {
+    text-decoration: underline;
+}
+
+a.link:visited {
+    color: var(--icon-red);
+}
+
+.footer {
+    margin: 3rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.footer-icon {
+    height: 1.25rem;
+    vertical-align: top;
+}
+
+#github {
+    grid-column: 1;
+}
+
+#chrome {
+    grid-column: 2;
+    text-align: right;
+}
+
+#run-test {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+    border: 0.125rem solid var(--icon-blue);
+    box-shadow: 0.05rem 0.125rem var(--icon-blue);
+    border-radius: 0.5rem;
+    color: var(--icon-blue);
+    background-color: inherit;
+}
+
+#run-test:disabled,
+#run-test:active {
+    box-shadow: none;
+    transform: translate(0.05rem, 0.125rem);
+}
+
+#output {
+    font-weight: bold;
+    text-align: center;
+}
+
+.err-color {
+    color: var(--icon-red);
+}
+
+.good-color {
+    color: var(--icon-blue);
+}
+
+#yt-video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-width: 42rem;
+    max-height: 23.625rem
+    
+}

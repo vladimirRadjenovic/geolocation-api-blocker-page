@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolcation API Blocker</title>
+    <meta name="description"
+        content="Geolocation API Blocker, a privacy enhancing Google Chrome extension for controlling the Geolocation API.">
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet prefetch" href="css/normalize.css">
+    <link rel="stylesheet prefetch" href="css/stylesheet.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1 class="main-heading">Geolocation API Blocker</h1>
+    </header>
+    <main>
+        <section class="section">
+            <h2 class="sub-heading">About</h2>
+            A simple extension for overriding the browser's Geolocation API.
+            The Geolocation API, a standard feature supported in all major Web browsers, allows sites to infer your
+            precise location. Past research has shown that many sites using this API do not require the most
+            accurate location to work correctly. Yet, there is no native way to make the reported data less
+            accurate. Geolocation API Blocker is an <b>open-source</b> Google Chrome extension that allows the user
+            to modify
+            their reported coordinates for different hostnames in two ways:
+            <ol class="list">
+                <li>A fixed location of their choosing.</li>
+                <li>A noisy location uniformly distributed inside a circle of specified radius centered around the
+                    actual location.
+                </li>
+            </ol>
+            <p>
+                <i>The extension only works with the Geolocation API. It cannot protect against methods that use
+                    your IP address.</i>
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="sub-heading">Video Showcase</h2>
+            <iframe id="yt-video" src="https://www.youtube.com/embed/-rHzII0IFLI"
+                title="Geolocation API Blocker Showcase" frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="section">
+            <h2 class="sub-heading">Why should I use this extension?</h2>
+            While other extensions offering similar functionality exist, JavaScript can be abused to bypass many
+            of them.
+            Geolocation API Blocker attempts to prevent such problems.
+            If you are running another similar extension, try clicking the test button.
+            The test will perform a relatively simple inspection of the <code>navigator.geolocation</code> object and
+            attempt to
+            circumvent the extension.
+            (Note that running the test requires the Geolocation API permission if the inspection detects tampering.)
+            <div id="test">
+                <button id="run-test" type="button">RUN TEST</button>
+                <div id="output" class="err-color"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="sub-heading">Experiencing problems?</h2>
+            You can report problems via <a class="link" href="mailto:geolocationapiblocker@gmail.com"
+                target="_blank">email</a>
+            or open a <a class="link" href="https://github.com/vladimirRadjenovic/geolocation-api-blocker/issues"
+                target="_blank">GitHub issue</a>.
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div id="github">
+            <a class="link" href="https://github.com/vladimirRadjenovic/geolocation-api-blocker" target="_blank">
+                <img class="footer-icon" src="images/github-icon.svg" alt="Github icon">
+                Github
+            </a>
+        </div>
+        <div id="chrome">
+            <a class="link"
+                href="https://chromewebstore.google.com/detail/geolocation-api-blocker/cbpmbkimnhdlaibdcngplgmchiibjeni"
+                target="_blank">
+                <img class="footer-icon" src="images/chrome-web-store-icon.svg" alt="Chrome Web Store icon">
+                Chrome Web Store
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
