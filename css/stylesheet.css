@@ -14,7 +14,7 @@
 *,
 body {
     font-family: 'robotoregular', Helvetica, sans-serif;
-    line-height: 1.28;
+    line-height: 1.5;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
 }
 
 .section {
-    text-align: justify;
+    text-align: left;
 }
 
 .list {
@@ -82,7 +82,7 @@ a.link:visited {
 
 #run-test {
     display: block;
-    margin: 0.5rem auto;
+    margin: 1rem auto 0.5rem auto;
     padding: 0.25rem 1rem;
     font-weight: bold;
     border: 0.125rem solid var(--icon-blue);
